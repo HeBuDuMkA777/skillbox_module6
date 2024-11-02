@@ -20,3 +20,15 @@ print('Задача 4. Вклады')
 # 4 год. 56 + 5% = 58
 # 5 год. 58 + 5% = 60
 # Кол-во лет для достижения порога: 5
+
+deposit = int(input("Вклад в банке: "))
+percent = int(input("Проценты: "))
+limit = int(input("Порог вклада: "))
+year = 0
+result = 0
+while result < limit:
+    year += 1
+    result = int(deposit + (deposit / 100 * percent))
+    print(year, " год. ", deposit, " + ", percent, "% = ", result, sep = "")
+    deposit = result   
+print("Кол-во лет для достижения порога:", year)
