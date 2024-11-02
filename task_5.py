@@ -18,3 +18,20 @@ print('Задача 5. Игра «Угадай число»')
 # Число больше, чем нужно. Попробуйте ещё раз!
 # Введите число: 7
 # Вы угадали! Число попыток: 4
+
+import random
+
+my_num = random.randint(1,11)
+counter = 0
+while True:
+    result = int(input("Введите число: "))
+    if result > my_num:
+        print("Число больше, чем нужно. Попробуйте ещё раз!")
+        counter += 1
+    elif result < my_num:
+        print("Число меньше, чем нужно. Попробуйте ещё раз!")
+        counter += 1
+    else:
+        counter += 1
+        print("Вы угадали! Число попыток:", counter)
+        break
