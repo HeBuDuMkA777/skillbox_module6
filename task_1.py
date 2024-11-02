@@ -11,3 +11,10 @@ print('Задача 1. Кубы чисел')
 # 1 ** 3 = 1
 # 2 ** 3 = 8
 # 3 ** 3 = 27
+
+my_num = int(input("Введите число: "))
+count = 1
+
+while my_num >= count:
+    print(count, "** 3 =", count ** 3)
+    count += 1
