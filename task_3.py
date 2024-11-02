@@ -68,7 +68,7 @@ print('Задача 3. Обычный день на работе')
 # Нужно зайти в магазин.
 
 work_time = 8
-in_call = 0
+in_call = False
 hour = 1
 all_task = 0
 
@@ -81,5 +81,5 @@ while work_time >= hour:
         in_call = int(input("Звонит жена. Взять трубку? (1 — да, 0 — нет): "))
     hour += 1
 print("Рабочий день закончился. Всего выполнено задач:", all_task)
-if in_call != 0:
+if in_call:
     print("Нужно зайти в магазин.")
