@@ -13,3 +13,12 @@ print('Задача 2. Слишком большие числа')
 # Пример 2
 # Введите число: 0
 # Кол-во цифр в числе: 1
+
+bill = int(input("Введите число: "))
+counter = 0
+if bill == 0:
+    counter += 1
+while bill > 0:
+    bill //= 10
+    counter += 1
+print("Кол-во цифр в числе:", counter)
